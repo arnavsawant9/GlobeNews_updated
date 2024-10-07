@@ -1,0 +1,76 @@
+.shimmer-card{
+  background-color: rgb(171, 171, 171);
+  padding: 5px;
+  width: 200px;
+  margin: 8px;
+  height: 300px;
+}
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navitems{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  background-color: rgb(51, 240, 255 );
+  padding:10px;
+}
+
+.navbar input,
+.navbar select,
+.navbar button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.navbar select {
+  max-width: 200px;
+  overflow-y: scroll;
+}
+
+.navbar button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.newscard{
+  background-color: lightgray;
+  padding: 5px;
+  width: 200px;
+  margin: 8px;
+}
+
+.newscard:hover {
+  transform: scale(1.05);
+}
+
+.image{
+  height: 150px;
+  width: 195px;
+}
