@@ -53,7 +53,7 @@
 .news-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start; 
   gap: 20px;
   padding: 20px;
 }
@@ -63,7 +63,8 @@
   background-color: lightgray;
   padding: 5px;
   width: 200px;
-  margin: 8px;
+  margin: 7px;
+  border:1px solid black;
 }
 
 .newscard:hover {

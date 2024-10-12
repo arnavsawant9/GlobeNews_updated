@@ -47,3 +47,4 @@ const Newscard = (props) => {
 }
 
 export default Newscard;
+
