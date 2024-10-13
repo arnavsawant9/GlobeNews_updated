@@ -1,40 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    position: relative; 
+}
+
 .logo {
     display: flex;
-    align-items: center; 
-    color:#ffffff;
-  }
+    align-items: center;
+    color: #ffffff;
+}
 
-img{
+img {
     height: 60px;
     width: 60px;
-    width: auto;
-    align-items: flex-start;
     margin-right: 1px;
-    padding: 0px;
 }
 
+.title {
+    font-size: 24px;
+    color: white;
+}
 
-.navbar{
-    justify-content: center;
+.navitems {
+    display: flex; 
     align-items: center;
-    margin: 0px;
-    /* background-color: #588157;  i will add this styling add the color combo is decided*/
 }
 
-.navitems button:hover{
-    background-color: black;
+.toggle-button {
+    display: none; 
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
-
-.navitems input[type="radio"] {
-    margin-right: 5px;
-    transform: scale(1.2);
-    accent-color: #1e90ff;
+.navitems.open {
+    display: flex; 
+    flex-wrap: wrap; 
+    position: absolute; 
+    top: 60px; 
+    left: 0; 
+    background-color: #2a2a2a; 
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px;
+    gap: 5px; 
   }
 
-.navitems .labels{
-    margin-right: 30px;
-}
 
-.navitems .labels .radio1{
-    padding: 30px;
-}
+@media (max-width: 1220px) {
+    .toggle-button {
+        display: block; 
+    }
+  
+    .navitems {
+        display: none; 
+    }
+  
+    .navitems.open {
+        display: flex; 
+    }
+  }
