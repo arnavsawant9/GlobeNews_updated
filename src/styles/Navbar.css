@@ -1,0 +1,40 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    width: auto;
+    align-items: flex-start;
+    margin-right: 1px;
+    padding: 0px;
+}
+
+
+.navbar{
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    /* background-color: #588157;  i will add this styling add the color combo is decided*/
+}
+
+.navitems button:hover{
+    background-color: black;
+}
+
+.navitems input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    accent-color: #1e90ff;
+  }
+
+.navitems .labels{
+    margin-right: 30px;
+}
+
+.navitems .labels .radio1{
+    padding: 30px;
+}

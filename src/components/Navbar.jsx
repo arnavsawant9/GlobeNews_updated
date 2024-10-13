@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { countrylist, languagelist } from '../utils/constants';
+import '../styles/Navbar.css'
+import newslogo from '../assets/newspaperlogo-removebg-preview.png'
 
 const Navbar = ({ onSearch }) => {
   // const {onSearch}=props;
@@ -18,18 +20,21 @@ const Navbar = ({ onSearch }) => {
 
   return (
     <nav className="navbar">
+      <div className="logo">
+      <img src={newslogo}/>
       <div className='title'><h1>GlobeNews</h1></div>
+      </div>
       <div className='navitems'>
-        <div>
-          <label>
+        <div className='labels'>
+          <label className='radio1'>
             <input
               type="radio"
               checked={isTopNews}
               onChange={() => setIsTopNews(true)}
             />
-            Top News
+            Trending News
           </label>
-          <label>
+          <label className='radio2'>
             <input
               type="radio"
               checked={!isTopNews}
