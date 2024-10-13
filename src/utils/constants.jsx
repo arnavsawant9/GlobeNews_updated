@@ -1,6 +1,6 @@
-export const TOPNEWS_URL="https://gnews.io/api/v4/top-headlines?&max=15&apikey=0869b1d21c5b15701a15a7f0a4f6df73";
+export const TOPNEWS_URL="https://gnews.io/api/v4/top-headlines?&max=15&apikey=36d3c5703163e8e264c57a90ec1220a9";
 
-export const NEWS_URL="https://gnews.io/api/v4/search?&max=15&apikey=0869b1d21c5b15701a15a7f0a4f6df73";
+export const NEWS_URL="https://gnews.io/api/v4/search?&max=15&apikey=36d3c5703163e8e264c57a90ec1220a9";
 
 export const countrylist = {
     Australia:'au',

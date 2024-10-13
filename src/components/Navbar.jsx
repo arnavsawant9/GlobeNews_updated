@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { countrylist, languagelist } from '../utils/constants';
 import '../styles/Navbar.css'
 import newslogo from '../assets/newspaperlogo-removebg-preview.png'
+import DarkMode from './DarkMode/DarkMode';
+
 
 const Navbar = ({ onSearch }) => {
   // const {onSearch}=props;
@@ -84,6 +86,7 @@ const Navbar = ({ onSearch }) => {
         </select>
 
         <button onClick={handleSearch}>Search</button>
+        <DarkMode/>
       </div>
     </nav>
   );
