@@ -22,14 +22,15 @@
 }
 
 [data-theme="dark"]{
-  --background-color: #1e1e1e;
+  --background-color: #121212;
   --foreground-color: #60a7ef;
   --primary-text-color: #f8f9fa;
   --secondary-text-color: #007bff;
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
   --navbar-bg: #1db5ed;
-  --newscard-bg: lightgray;
+  --newscard-bg: #444046;
+  --newscard-color: #f8f9fa;
 }
 
 .navitems{
@@ -87,10 +88,15 @@
 
 .newscard{
   background-color: var(--newscard-bg);
+  color: var(--newscard-color);
   padding: 5px;
   width: 200px;
   margin: 7px;
   border:1px solid black;
+}
+
+.newscard-title{
+  color: var(--newscard-color);
 }
 
 .newscard:hover {
