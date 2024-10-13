@@ -12,13 +12,17 @@
 
 :root{
   --background-color: #f8f9fa;
-  --foreground-color: #60a7ef;
+  --foreground-color: #000000;
   --primary-text-color: #1e1e1e;
   --secondary-text-color: #007bff;
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
   --navbar-bg: #283452;
-  --newscard-bg: #f0eb9d;
+  --newscard-bg: #ffffff;
+  --navbar-button: #007bff;
+  --navbar-label: #ffffff;
+  --newscard-color: #333333;
+  --newscard-link:#283452;
 }
 
 [data-theme="dark"]{
@@ -28,27 +32,28 @@
   --secondary-text-color: #007bff;
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
-  --navbar-bg: #1db5ed;
+  --navbar-bg: #007bff;
   --newscard-bg: #444046;
   --newscard-color: #f8f9fa;
-}
-
-.navitems{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  --navbar-button: #283452;
+  --navbar-label: #000000;
+  --newscard-link:#007bff;
 }
 
 .navbar {
+  padding-left: 20px;  
+  padding-right: 60px; 
   display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-  gap: 10px;
-  margin: 0px;
-  /* background-color: rgb(51, 240, 255 ); */
+  justify-content: space-between; 
+  align-items: center; /
+  height: 64px; 
   background-color: var(--navbar-bg);
-  color: var(--primary-text-color);
-  padding:10px;
+}
+
+.navitems {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
 }
 
 .navbar input,
@@ -65,7 +70,7 @@
 }
 
 .navbar button {
-  background-color: #007bff;
+  background-color: var(--navbar-button);
   color: white;
   cursor: pointer;
 }
@@ -74,6 +79,9 @@
   background-color: #0056b3;
 }
 
+.navbar label {
+  color: var(--navbar-label);
+}
 
 .news-container {
   background-color: var(--background-color);
@@ -90,7 +98,7 @@
   background-color: var(--newscard-bg);
   color: var(--newscard-color);
   padding: 5px;
-  width: 200px;
+  width: 250px;
   margin: 7px;
   border:1px solid black;
 }
@@ -98,10 +106,22 @@
 .newscard-title{
   color: var(--newscard-color);
 }
+.newscard-date{
+  color: var(--newscard-color);
+}
+.newscard-link{
+  border: 2px solid var(--newscard-link);
+  color:var(--newscard-link)
+}
+.newscard-link:hover {
+  background-color:var(--newscard-link) ;
+  color: white;
+}
 
 .newscard:hover {
   transform: scale(1.05);
 }
+
 
 .image{
   height: 150px;
